@@ -1,0 +1,99 @@
+.horizontalMenu {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    padding: 10px 0;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .horizontalMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .horizontalMenu li {
+    position: relative;
+    font-weight: 700;
+  }
+  
+  .horizontalMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+  }
+  
+  .horizontalMenu a:hover {
+    background-color: #0056b3;
+    color: #e0e0e0;
+  }
+  
+  .horizontalMenu li:hover ul {
+    display: block;
+  }
+  
+  .horizontalMenu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0056b3;
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+  }
+  
+  .horizontalMenu ul ul li {
+    padding: 10px 15px;
+  }
+  
+  .horizontalMenu ul ul a {
+    color: white;
+  }
+  
+  .horizontalMenu ul ul a:hover {
+    background-color: #003d7a;
+  }
+  
+  .viewSwitcher {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .viewSwitcher button {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    i{
+      font-size: 25px;
+    }
+  }
+  
+  /* .viewSwitcher button.active {
+    background-color: #007bff;
+    color: #fff;
+  } */
+  
+  /* .viewSwitcher button:hover {
+    background-color: #f0f0f0;
+  }
+   */

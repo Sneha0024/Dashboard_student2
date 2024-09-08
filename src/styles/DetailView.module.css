@@ -1,0 +1,193 @@
+.detailView {
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 40px auto;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #ddd;
+  }
+  .detailView:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .detailView h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .detailView p {
+    margin: 8px 0;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .detailView button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .detailView button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  .about {
+    $cubic: cubic-bezier(0.64, 0.01, 0.07, 1.65);
+    $transition: 0.6s $cubic;
+    $size: 40px;
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 10px;
+    width: $size;
+    height: $size;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: all 0.2s ease;
+ 
+    .bg_links {
+       width: $size;
+       height: $size;
+       border-radius: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: rgba(#000000, 0.2);
+       border-radius: 100%;
+       backdrop-filter: blur(5px);
+       position: absolute;
+    }
+ 
+    .logo {
+       width: $size;
+       height: $size;
+       z-index: 9;
+       background-image: url(https://rafaelavlucas.github.io/assets/codepen/logo_white.svg);
+       background-size: 50%;
+       background-repeat: no-repeat;
+       background-position: 10px 7px;
+       opacity: 0.9;
+       transition: all 1s 0.2s ease;
+       bottom: 0;
+       right: 0;
+    }
+ 
+    .social {
+       opacity: 0;
+       right: 0;
+       bottom: 0;
+ 
+       .icon {
+          width: 100%;
+          height: 100%;
+          background-size: 20px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: transparent;
+          display: flex;
+          transition: all 0.2s ease, background-color 0.4s ease;
+          opacity: 0;
+          border-radius: 100%;
+       }
+ 
+       &.portfolio {
+          transition: all 0.8s ease;
+ 
+          .icon {
+             background-image: url(https://rafaelavlucas.github.io/assets/codepen/link.svg);
+          }
+       }
+ 
+       &.dribbble {
+          transition: all 0.3s ease;
+          .icon {
+             background-image: url(https://rafaelavlucas.github.io/assets/codepen/dribbble.svg);
+          }
+       }
+ 
+       &.linkedin {
+          transition: all 0.8s ease;
+          .icon {
+             background-image: url(https://rafaelavlucas.github.io/assets/codepen/linkedin.svg);
+          }
+       }
+    }
+ 
+    &:hover {
+       width: 105px;
+       height: 105px;
+       transition: all $transition;
+ 
+       .logo {
+          opacity: 1;
+          transition: all 0.6s ease;
+       }
+ 
+       .social {
+          opacity: 1;
+ 
+          .icon {
+             opacity: 0.9;
+          }
+ 
+          &:hover {
+             background-size: 28px;
+             .icon {
+                background-size: 65%;
+                opacity: 1;
+             }
+          }
+ 
+          &.portfolio {
+             right: 0;
+             bottom: calc(100% - 40px);
+             transition: all 0.3s 0s $cubic;
+             .icon {
+                &:hover {
+                   background-color: #698fb7;
+                }
+             }
+          }
+ 
+          &.dribbble {
+             bottom: 45%;
+             right: 45%;
+             transition: all 0.3s 0.15s $cubic;
+             .icon {
+                &:hover {
+                   background-color: #ea4c89;
+                }
+             }
+          }
+ 
+          &.linkedin {
+             bottom: 0;
+             right: calc(100% - 40px);
+             transition: all 0.3s 0.25s $cubic;
+             .icon {
+                &:hover {
+                   background-color: #0077b5;
+                }
+             }
+          }
+       }
+    }
+ }
+ 
+ 
+  

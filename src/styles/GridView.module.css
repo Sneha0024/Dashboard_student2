@@ -1,0 +1,52 @@
+.gridView {
+    padding: 20px;
+  }
+  
+  .gridView table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gridView th, .gridView td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .gridView th {
+      /* background-color: #7209b747; */
+      background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+  }
+  .gridView th i{
+margin-right: 5px;
+  }
+  .gridView tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .gridView tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .gridView td {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .gridView td:first-child {
+    font-weight: 500;
+  }
+  
+  .gridView tr.selected {
+    background-color: #e8f7ff;
+  }
+  

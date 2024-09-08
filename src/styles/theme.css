@@ -1,0 +1,79 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+  }
+  
+  a:hover {
+    color: #007bff;
+  }
+  
+  /* Colors */
+  :root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --text-light-color: #666;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons */
+  button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 0.875rem;
+    transition: background-color 0.2s;
+    min-width: 120px;
+    i{
+      margin-right: 5px;
+    }
+  }
+  
+  /* button:hover {
+    background-color: var(--secondary-color);
+  }
+   */
+  /* Forms */
+  input, textarea, select {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Containers */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+  }
+  
